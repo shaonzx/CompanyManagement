@@ -49,6 +49,7 @@ namespace CompanyManagement.Services.Implementations
             //need to write some auto mapper for fieldChange
             existing.CompanyAddress = c.CompanyAddress;
             existing.CompanyName = c.CompanyName;
+            existing.Email = c.Email;
             try
             {
                 await _context.SaveChangesAsync();

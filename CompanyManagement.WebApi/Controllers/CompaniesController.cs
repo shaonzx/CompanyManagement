@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace CompanyManagement.WebApi.Controllers
 {
-    [Authorize(Roles = "Admin")]
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class CompaniesController : ControllerBase
